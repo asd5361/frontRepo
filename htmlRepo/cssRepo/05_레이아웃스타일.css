@@ -1,0 +1,69 @@
+#t01{
+    background-color: aqua;
+    width:50px;
+    height: 50px;
+    /*vw vh 는 내가 보는 화면 기준, %는 부모 기준*/
+}
+span{
+    display: inline=block;
+    
+    width:50px;
+    height:100px;
+    background-color: green;
+}
+/*
+    인라인 : 글자가 있는 만큼만 공간차지
+            크기 조절 불가능
+
+    블럭 : 한 줄 전체를 차지
+            크기 조절 가능
+*/
+#t02{
+    display: block;
+    width:100px;
+    height: 100px;
+    background-color: gray;
+    border-width: 10px;
+    border-style:dashed;
+    border-color: brown;
+    border-radius: 2%;
+    border: 5px ridge red;
+}
+.box{
+    width:100px;
+    height: 100px;
+    /* float: left; */
+    display: inline-block;
+    background-color: gray;
+}
+#target{
+    margin:10px;
+    padding: 10px;
+}
+.ptest{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+   
+#p03{
+    background-color: red;
+    position: static;
+    position: sticky;
+    bottom: 100px;
+    left: 1000px;
+
+    /* 픽스드는 레이어가 맨 뒤, 화면(뷰어)기준 절댓값
+    엡솔은 레이어가 맨 앞, body에서 절댓값 
+    릴레이티브원래 공간은 차지하면서 보이는 것만 움직인다.*/
+
+}
+#wrap{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    position: absolute;
+}
+#p03{
+
+}
