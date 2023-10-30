@@ -1,6 +1,25 @@
-*{
-    margin:0;
-    padding: 0;
-    list-style-type: none;
+.box{
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+
+}
+
+#t01{
+    /* transform: translateX(100px); */
+}
+#t01:hover{
+    transform: translate(50px,50px);
+    transform: scaleX(2);
+    transform: scaleY(0.5);
+    transform: scale(2);
+    transform: skew(30deg, 45deg);
+    transform: rotate(30deg);
+
+    /*perspective : 수치 만큼 떨어져서 보겠다는 뜻*/
+    transform: perspective(100px) rotate3d(1,1,1 30deg); 
+    transform: perspective(100px) rotateY(30deg);
     
+    transform: rotateY(180deg);
+    backface-visibility: hidden; /*해당 요소 뒷면은 안 보이게 함*/
 }

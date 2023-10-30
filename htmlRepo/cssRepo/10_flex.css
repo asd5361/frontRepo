@@ -1,0 +1,17 @@
+*{
+
+}
+#wrap{
+    width:500px;
+    height: 100px;
+    border:5px solid red;
+    display: flex;
+    justify-content: center; /*부모한테 자식들을 센터 맞추게 함*/
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border:1px solid blue;
+
+}
