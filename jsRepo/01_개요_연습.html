@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개요 연습</title>
+
     <style>
-        #t01{
+        div{
             background-color: gray;
             width: 100px;
             height: 100px;
+            display: inline-block;
+            box-sizing: border-box;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 90px;
+            color:#fff;
+            font-family: Noto San ko;
         }
-        #t02{
+        .abc{
+            border:2px solid black;
+        }
+        #rbox{
             background-color: red;
-            width: 300px;
-            height: 300px;
+        }
+        #blue-box{
+            background-color: blue;
         }
     </style>
+
 </head>
 <body>
-    <!-- 혼자 연습해서 내용이 다름. 깃에서 받아서 하기 -->
-    <h1>연습</h1>
-    <div id="t01"></div>
-    <button onclick="f01();">변경버튼</button>
+    
+
+    <div>1번</div>
+    <div>2번</div>
+
+    <div class="abc" id="box">박스</div>
+    <div class="abc" id="rbox">빨간색 박스</div>
+    <div class="abc" id="blue-box">파란색 박스</div>
 
     <script>
-        function f01(){
-            const x =document.querySelector("#t01");
-                x.innerHTML="BOX";
-                x.setAttribute("id","t02");
+        const x = document.querySelector("#rbox");
+        body.innerText= x;
+        console.log(x);
+        
+        const arr = document.querySelectorAll(".abc");
+        for(i=0; i<arr.length; i++){
+            console.log(arr[i]);
         }
     </script>
+
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습장</title>
+    <style>
+        div{}
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .gray{
+            background-color: gray;
+        }
+        #target{
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>연습장</h1>
+
+    <div id="target" class="box gray"></div>
+
+    <script>
+        const x =document.querySelector("#target");
+        x.addEventListener("mouseout",()=>{
+            console.log("이벤트 발생~!");
+        });
+    </script>
+
+    <!-- 시험에 나옴
+    
+        focus   : 커서 깜빡
+        blur    : 포커스가 풀리는거
+    -->
+    <input type="text" id="userId">
+    <div id="result"></div>
+    <!-- 4글자 쓰고 칸을 벋어나는 상황-->
+    <script>
+        const inputTag=document.querySelector("#userId");
+        inputTag.addEventListener("blur",()=>{
+            alert("아이디 길이는 4글자 이상입니다.");
+        });
+        const result = document.querySelector("#result");
+        result.addEventListener("focus",()=>{
+            result.innerHTML="아이디 길이는 4글자 이상입니다.";
+        });
+    </script>
+
+</body>
+</html>
