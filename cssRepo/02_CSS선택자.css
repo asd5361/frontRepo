@@ -88,7 +88,7 @@ button:disabled{
 /***********************************************/
 /* 일반 구조 선택자 */
 
-#test6>p:nth-last-child(2){
+#test6 > p:nth-last-child(1){
     background-color: red;
 }
 
@@ -98,7 +98,7 @@ button:disabled{
 #test7{
     background-color: gray;
 }
-#test7>p:nth-of-type(2n){
+#test7>p:nth-of-type(n){
     background-color: red;
 }
 
@@ -116,7 +116,7 @@ button:disabled{
 /***********************************************/
 /* 부정 선택자 */
 
-#test9 p:not(.kh){
+#test9 p:not(:nth-child(2)){
     background-color: red;    
     color:#fff;
 }
