@@ -8,7 +8,7 @@
     transform: translateX(100px);
     background-color: gray;
     transition: 1500ms;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function:cubic-bezier(0.25,0.25,1,1);
 
 }
 @keyframes kh{ /*0~100% 대신 from~to를 써도 된다.*/
@@ -33,6 +33,7 @@
     }
 }
 #t02:hover{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation-name : kh;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -49,3 +50,6 @@
     /*animation-play-state: paused;*/ /*paused : 멈춤*/
 }
 
+#t02:hover{
+    /* animation-play-state: running; */
+}

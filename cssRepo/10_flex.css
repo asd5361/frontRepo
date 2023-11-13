@@ -9,13 +9,13 @@
     flex-wrap: wrap;
 
     /* 마시멜로 간격 */
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
 
     /* 꼬챙이 위치 조정*/
-    align-items: center;
+    /*align-items: center;*/
 
     /* 꼬챙이 간격 조정 */
-    align-content: center;
+    /*align-content: center;*/
 
 }
 

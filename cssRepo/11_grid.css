@@ -6,8 +6,9 @@
     display: grid;
 
     /* 직접 지정하는 공간 */
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(3 , 1fr 100px 200px 1fr); */
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
 
     /* 자동으로 만들어지는 공간 */
     grid-auto-rows: 300px;
@@ -40,5 +41,5 @@
     grid-column: span 2 ;
 
     /* place-self: normal normal; */
-    /* order : 1; */
+    /* order : -3; */
 }
