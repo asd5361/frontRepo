@@ -81,7 +81,7 @@ function f05(){
     // for(let i=0; i<stdArr.length; i++){
     //     console.log(stdArr[i].name);
     // }
-    for(idx in stdArr){
+    for(const idx in stdArr){
         console.log(stdArr[idx].name);
     }
 }

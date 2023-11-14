@@ -15,6 +15,13 @@ const testBtn = document.querySelector("#testBtn");
     });
 */
 
+//화살표함수 (arrow function)
+/*
+    testBtn.addEventListener('click',() =>{
+        alert("화살표 함수 실행~~~");
+    });
+*/
+
 //자동 실행 함수
 /*
     (
@@ -24,12 +31,7 @@ const testBtn = document.querySelector("#testBtn");
     )();
 */
 
-//화살표함수 (arrow function)
-/*
-    testBtn.addEventListener('click',() =>{
-        alert("화살표 함수 실행~~~");
-    });
-*/
+
 
 
 /******************매개 변수 *******************/

@@ -1,3 +1,7 @@
+function f02(){
+    console.log("f02 called");
+}
+
 window.onload = ()=>{
     const btn03 = document.querySelector("#btn03");
     btn03.addEventListener("click",()=>{
@@ -9,10 +13,6 @@ window.onload = ()=>{
         console.log("f01 called");
     };
 };
-
-function f02(){
-    console.log("f02 called");
-}
 
 // const btn03 = document.querySelector("#btn03");
 // btn03.addEventListener("click",()=>{
@@ -41,17 +41,17 @@ function f05(){
         memberPwd.focus();
         return false;
     }
-    if(memberPwd2.value !== memberPwd.value){
-        alert("비밀번호가 일치하지 않습니다.");
-        memberPwd2.focus();
-        return false;
-    }
     if(memberNick.value.length < 1){
         alert("닉네임은 빈칸일 수 없습니다.");
         memberNick.focus();
         return false;
     }
+    if(memberPwd2.value !== memberPwd.value){
+        alert("비밀번호가 일치하지 않습니다.");
+        memberPwd2.focus();
+        return false;
+    }
 
-    return true;
+    return true;    //회원가입 진행
     
 }

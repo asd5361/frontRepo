@@ -15,11 +15,11 @@
     
     <h3>01.자바 스크립트 사용법</h3>
     <pre>
-        인라인
         내부
         외부
+        인라인
     </pre>
-    <button onclick="alert('클릭 이벤트 발생');">버튼(내부)</button>
+    <button onclick='document.write("<h1>동적으로 추가한 글자 ㅎㅎㅎ</h1>");'>버튼(내부)</button>
     <!-- <script src="01_개요.js"></script> -->
     
     <h3>2. 데이터 입출력</h3>
@@ -32,14 +32,14 @@
         console.log
     </pre>
     <script>
-        //alert("알람");
+        //window.alert('알람~~~!!!');
 
         // x = confirm("당신은 성인인가요?");
         // console.log(x);
 
         // x = prompt("당신의 이름은?");
         // console.log(x);
-        // document.write("<h1>동적으로 추가한 글자</h1>");
+        
     </script>
 
     <h3>03. 요소 선택</h3>
@@ -51,9 +51,9 @@
         // x = document.querySelectorAll //("div"); //배열로 모두 가져온다.
         // console.log(x);
 
-        // document.getElementById
-        // document.getElementsByClassName
-        // document.getElementsByTagName
+        // document.getElementById('target');
+        // document.getElementsByClassName('box');
+        // document.getElementsByTagName('div');
 
         /**요소 가져와서 내부의 글자를 변경해보기***/
         x = document.querySelector("#target");
